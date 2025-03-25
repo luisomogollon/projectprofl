@@ -244,7 +244,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
+      <section id="about" className="py-20 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12 dark:text-white">Sobre Mí</h2>
           <div className="max-w-4xl mx-auto">
@@ -254,7 +254,7 @@ function App() {
                   <img 
                     src="/profile.jpg" 
                     alt="Profile"
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center text-white">
