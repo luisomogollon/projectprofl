@@ -94,10 +94,10 @@ function App() {
     },
     {
       title: "Blog Corporativo",
-      description: "Blog empresarial con sistema de membresía y contenido premium",
+      description: "Blog empresarial Contenido Prueba y premium",
       image: "/2.png",
       url: "https://elegant-fudge-31eee0.netlify.app/", // Placeholder URL
-      tags: ["WordPress", "JavaScript", "MySQL"]
+      tags: ["Astro", "JavaScript", "Vite"]
     },
     {
       title: "Gestor de Tareas",
