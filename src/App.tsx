@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code2, MonitorSmartphone, Database, PaintBucket, Menu, X, ChevronUp, Sun, Moon } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code2, MonitorSmartphone, PaintBucket, Menu, X, ChevronUp, Sun, Moon, BarChart } from 'lucide-react';
 import { useTheme } from './ThemeContext';
 import { SiPhp, SiTypescript, SiNativescript, SiTailwindcss, SiReact, SiHtml5, SiCss3, SiJavascript, SiVuedotjs, SiAstro } from "react-icons/si";
 
@@ -298,14 +298,14 @@ function App() {
             {technologies.map((tech, index) => (
               <div 
                 key={index}
-                className="group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
+                className="group bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
               >
                 <div 
                   className={`${tech.color} transition-transform duration-300 group-hover:scale-110`}
                 >
-                  {tech.icon}
+                  {React.cloneElement(tech.icon, { className: "w-14 h-14 mx-auto mb-4" })}
                 </div>
-                <h3 className="text-center font-semibold dark:text-white">{tech.name}</h3>
+                <h3 className="text-center text-lg font-semibold dark:text-white">{tech.name}</h3>
               </div>
             ))}
           </div>
@@ -316,43 +316,56 @@ function App() {
       <section id="skills" className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-center mb-16 dark:text-white">Habilidades</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300">
-              <Code2 className="w-16 h-16 mx-auto mb-4 text-blue-500" />
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+              <Code2 className="w-14 h-14 mx-auto mb-4 text-blue-500" />
               <h3 className="text-xl font-semibold mb-2 dark:text-white">Frontend</h3>
               <p className="text-gray-600 dark:text-gray-300">HTML, CSS, JavaScript, React</p>
               <div className="mt-4 space-y-2">
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{width: '90%'}}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '90%'}}></div>
                 </div>
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{width: '85%'}}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '85%'}}></div>
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300">
-              <PaintBucket className="w-16 h-16 mx-auto mb-4 text-blue-500" />
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+              <PaintBucket className="w-14 h-14 mx-auto mb-4 text-blue-500" />
               <h3 className="text-xl font-semibold mb-2 dark:text-white">Diseño</h3>
               <p className="text-gray-600 dark:text-gray-300">UI/UX, Responsive Design</p>
               <div className="mt-4 space-y-2">
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{width: '75%'}}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '75%'}}></div>
                 </div>
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{width: '85%'}}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '85%'}}></div>
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300">
-              <MonitorSmartphone className="w-16 h-16 mx-auto mb-4 text-blue-500" />
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+              <MonitorSmartphone className="w-14 h-14 mx-auto mb-4 text-blue-500" />
               <h3 className="text-xl font-semibold mb-2 dark:text-white">CMS</h3>
               <p className="text-gray-600 dark:text-gray-300">WordPress, WooCommerce</p>
               <div className="mt-4 space-y-2">
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{width: '95%'}}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '95%'}}></div>
                 </div>
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{width: '90%'}}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '90%'}}></div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+              <BarChart className="w-14 h-14 mx-auto mb-4 text-blue-500" />
+              <h3 className="text-xl font-semibold mb-2 dark:text-white">Marketing </h3>
+              <p className="text-gray-600 dark:text-gray-300">SEO, Digital, Growth Hacking</p>
+              <div className="mt-4 space-y-2">
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '85%'}}></div>
+                </div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div className="bg-blue-500 h-3 rounded-full" style={{width: '60%'}}></div>
                 </div>
               </div>
             </div>
