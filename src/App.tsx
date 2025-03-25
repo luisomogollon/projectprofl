@@ -103,28 +103,28 @@ function App() {
     {
       title: "Gestor de Tareas",
       description: "Aplicación CRUD para la gestión de tareas, con funcionalidades como creación, edición, eliminación.",
-      image: "public/3.png",
+      image: "/3.png",
       url: "https://statuesque-creponne-2e4905.netlify.app/", // Updated URL
       tags: ["TypeScript", "Vite", "MongoDB"]
     },
     {
       title: "Gestor de Tareas",
       description: "Un e-commerce rápido y moderno construido con Vite, React y TypeScript, potenciado por TailwindCSS para estilos.",
-      image: "public/4.png",
+      image: "/4.png",
       url: "https://voluble-kelpie-c2d92e.netlify.app/", // Updated URL
       tags: ["TypeScript", "Node.js", "Mock API"]
     },
     {
       title: "E-Store Admin Dashboard",
       description: "Tienda en línea personalizada con WooCommerce, integración de pagos y gestión de inventario",
-      image: "public/5.png",
+      image: "/5.png",
       url: "https://lucky-frangollo-39acd2.netlify.app/#", // Placeholder URL
       tags: ["Tailwind ", "JavaScript", "PHP"]
     },
     {
       title: "Landing page",
       description: "Diseñado para llevarte de principiante a profesional en tiempo récord.",
-      image: "public/6.png",
+      image: "/6.png",
       url: "https://singular-paletas-1c1afd.netlify.app/", // Placeholder URL
       tags: ["Vue.js", "Vite", "Node.js"]
     },
