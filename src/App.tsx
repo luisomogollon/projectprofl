@@ -291,7 +291,7 @@ function App() {
       </section>
 
       {/* Technologies Section */}
-      <section id="technologies" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <section id="technologies" className="py-20 bg-gray-200 dark:bg-gray-900 transition-colors duration-300">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 dark:text-white">Tecnologías</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-4xl mx-auto">
@@ -317,7 +317,7 @@ function App() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-center mb-16 dark:text-white">Habilidades</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center">
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+            <div className="bg-gray-200 dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
               <Code2 className="w-14 h-14 mx-auto mb-4 text-blue-500" />
               <h3 className="text-xl font-semibold mb-2 dark:text-white">Frontend</h3>
               <p className="text-gray-600 dark:text-gray-300">HTML, CSS, JavaScript, React</p>
@@ -330,7 +330,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+            <div className="bg-gray-200 dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
               <PaintBucket className="w-14 h-14 mx-auto mb-4 text-blue-500" />
               <h3 className="text-xl font-semibold mb-2 dark:text-white">Diseño</h3>
               <p className="text-gray-600 dark:text-gray-300">UI/UX, Responsive Design</p>
@@ -343,7 +343,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+            <div className="bg-gray-200 dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
               <MonitorSmartphone className="w-14 h-14 mx-auto mb-4 text-blue-500" />
               <h3 className="text-xl font-semibold mb-2 dark:text-white">CMS</h3>
               <p className="text-gray-600 dark:text-gray-300">WordPress, WooCommerce</p>
@@ -356,7 +356,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
+            <div className="bg-gray-200 dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition duration-300 h-64">
               <BarChart className="w-14 h-14 mx-auto mb-4 text-blue-500" />
               <h3 className="text-xl font-semibold mb-2 dark:text-white">Marketing </h3>
               <p className="text-gray-600 dark:text-gray-300">SEO, Digital, Growth Hacking</p>
@@ -374,7 +374,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <section id="projects" className="py-20 bg-gray-200 dark:bg-gray-900 transition-colors duration-300">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 dark:text-white">Proyectos Actuales</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
